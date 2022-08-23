@@ -38,27 +38,28 @@ nav {
   position: fixed;
   bottom: 0;
   width: 100%;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
 }
 
 .menu-list {
   display: block;
-  padding: 0px;
   list-style-type: none;
   text-align: center;
   white-space: nowrap;
-  margin: 0;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  width: 75%;
+  max-width: 900px;
 }
 
 .menu-list-item {
-  display: block;
-  min-width: 90px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 11px;
+  display: relative;
+  font-size: 1.2em;
   letter-spacing: 2px;
   text-align: center;
   line-height: 50px;
-  color: #000;
+  padding: 0;
+  min-width: 90px;
 }
 
 .menu-list-item a {
@@ -76,6 +77,14 @@ nav {
 @media(min-width: 480px) {
   .menu-list-item { display: inline-block; }
   .menu-list-item a { min-width: 90px; }
+}
+
+@media screen {
+  
+    li {
+        width: 16%;
+    }
+  
 }
 
 /*******************/
@@ -170,9 +179,8 @@ a:hover {
 }
 
 .date {
-  font-family: 'EB Garamond', 'Georgia', serif;
+  font-family: 'Aboreto';
   font-size: 3em;
-  font-weight: 500;
   line-height: 0.2em;
   letter-spacing: 0.05em;
   margin: 1em 0 1em 0;
