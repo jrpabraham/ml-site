@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Imperial+Script|Oswald|Josefin+Sans:300|Aboreto|Marcellus|Bodoni+Moda|Italiana|Antic+Didone|Cormorant+SC|Noto+Serif+Display|Licorice|Meow+Script|Allura|Alex+Brush');
+@import url('https://fonts.googleapis.com/css?family=Ms+Madi|Oswald|Josefin+Sans:300|Aboreto|Marcellus|Bodoni+Moda|Italiana|Antic+Didone|Cormorant+SC|Noto+Serif+Display|Licorice|Meow+Script|Allura|Alex+Brush');
 
 :root {
   --peach-color: #fed4ca;
@@ -39,6 +39,7 @@ nav {
   bottom: 0;
   width: 100%;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+  z-index: 99;
 }
 
 .menu-list {
@@ -92,8 +93,8 @@ nav {
 /*******************/
 
 h1 {
-    font-family: 'Imperial Script';
-    font-size: 1.5em;
+    font-family: 'Ms Madi';
+    font-size: 3em;
     font-variant: normal;
     font-weight: normal;
     text-align: center;
@@ -242,7 +243,7 @@ a:hover {
 }
 
 #splash-anchor #et {
-    font-family: Imperial Script;
+    font-family: Ms Madi;
     font-size: 0.5em;
     font-variant: normal;
     font-weight: 400;
@@ -281,6 +282,38 @@ a:hover {
     #footer-image {
         display: none;
     }
+}
+
+/*******************/
+/* Art Deco border */
+/*******************/
+
+.deco {
+    border: 2px solid;
+    position: relative;
+}
+
+.deco:before, .deco:after {
+    border: 1px solid;
+}
+
+.deco:before, .deco:after {
+    content: "";
+    position: absolute;  
+}
+
+.deco:before {
+    top: -8px;
+    right: 5px;
+    bottom: -8px;
+    left: 5px;
+}
+
+.deco:after {
+    top: 5px;
+    right: -8px;
+    bottom: 5px;
+    left: -8px;
 }
 
 /************/
@@ -330,9 +363,9 @@ a:hover {
 
 .page {
     background-color: transparent;
-    border: solid;
+/*    border: solid;
     border-width: 2px;
-    border-color: var(--main-text-color);
+    border-color: var(--main-text-color);*/
     text-align: center;
     width: 75%;
     max-width: 900px;
