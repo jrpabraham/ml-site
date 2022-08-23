@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Ms+Madi|Oswald|Josefin+Sans:300|Aboreto|Marcellus|Bodoni+Moda|Italiana|Antic+Didone|Cormorant+SC|Noto+Serif+Display|Licorice|Meow+Script|Allura|Alex+Brush');
+@import url('https://fonts.googleapis.com/css?family=Ms+Madi|Oswald|Josefin+Sans:300,400|Aboreto|Marcellus|Bodoni+Moda|Italiana|Antic+Didone|Cormorant+SC|Noto+Serif+Display|Licorice|Meow+Script|Allura|Alex+Brush');
 
 :root {
   --peach-color: #fed4ca;
@@ -15,7 +15,7 @@
 
 html {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 1em;
+    font-size: 16px;
     font-weight: 300;
     color: var(--main-text-color);
     scroll-behavior: smooth;
@@ -33,59 +33,56 @@ body {
 }
 
 nav {
-  background-color: var(--peach-color);
-  overflow: hidden;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
-  z-index: 99;
+    background-color: var(--peach-color);
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+    z-index: 99;
 }
 
 .menu-list {
-  display: block;
-  list-style-type: none;
-  text-align: center;
-  white-space: nowrap;
-  margin: 0 auto 0 auto;
-  padding: 0;
-  width: 75%;
-  max-width: 900px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    list-style-type: none;
+    text-align: center;
+    white-space: nowrap;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    width: 75%;
+    max-width: 900px;
+    min-width: 724px;
 }
 
 .menu-list-item {
-  display: relative;
-  font-size: 1.2em;
-  letter-spacing: 2px;
-  text-align: center;
-  line-height: 50px;
-  padding: 0;
-  min-width: 90px;
+    display: relative;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 50px;
+    padding: 0;
+    min-width: 90px;
+    width: fit-content;
+    margin: 0 1% 0 1%;
 }
 
 .menu-list-item a {
-  display: block;
-  cursor: pointer;
+    display: block;
+    cursor: pointer;
 }
 
 .menu-list-item:hover a {
-  text-decoration: none;
-  color: rgba(153, 153, 153, 1);
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
+    text-decoration: none;
+    color: rgba(153, 153, 153, 1);
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
 }
 
 @media(min-width: 480px) {
-  .menu-list-item { display: inline-block; }
-  .menu-list-item a { min-width: 90px; }
-}
-
-@media screen {
-  
-    li {
-        width: 16%;
-    }
-  
+    .menu-list-item { display: inline-block; }
+    .menu-list-item a { min-width: 90px; }
 }
 
 /*******************/
@@ -322,6 +319,9 @@ a:hover {
 
 .text {
     padding: 20px 15% 20px 15%;
+    font-size: 1.2em;
+    text-align: left;
+    text-indent: 2em;
 }
 
 .float {
