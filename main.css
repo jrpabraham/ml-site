@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Ms+Madi|Oswald|Josefin+Sans:300,400|Aboreto|Marcellus|Bodoni+Moda|Italiana|Antic+Didone|Cormorant+SC|Noto+Serif+Display|Licorice|Meow+Script|Allura|Alex+Brush');
 
 :root {
-  --peach-color: #fed4ca;
+  --peach-color: #ffd5cb;
   --forest-color: #203123;
   --leaf-color: #56612f;
   --white-color: #f2f2f2;
   --gold-color: #d7c791;
   --teal-color: #8f9f91;
+  --skin-color: #f6e6e1;
 }
 
 @viewport{
@@ -85,18 +86,26 @@ nav {
 }
 
  /* Dropup Button */
+
 .dropbtn {
-  background-color: #3498DB;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
+    border: none;
+    width: 100%;
+    height: 50px;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: 'Josefin Sans', serif;
+    font-weight: 300;
+    background-color: var(--white-color);
 }
 
 /* The container <div> - needed to position the dropup content */
 .dropup {
-  position: relative;
-  display: none;
+    display: none;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
 }
 
 /* Dropup content (Hidden by Default) */
@@ -305,7 +314,6 @@ a.hyperlink:hover {
     font-variant: normal;
     font-weight: 400;
     letter-spacing: normal;
-    color: var(--teal-color);
 }
 
 #splash-decor {
@@ -513,7 +521,7 @@ img {
 /* Buttons */
 /***********/
 
-button {
+/*button {
     color: var(--main-text-color);
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
@@ -527,9 +535,9 @@ button {
     transition: all 0.5s;
     cursor: pointer;
     margin: 10px 0 10px 0;
-}
+}*/
 
-.long {
+/*.long {
     height: 2em;
     width: 5em;
 }
@@ -542,7 +550,7 @@ button:hover {
 button:active {
     color: var(--main-text-color);
     background-color: transparent;
-}
+}*/
 
 /****************/
 /* Embedded map */
