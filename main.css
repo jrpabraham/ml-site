@@ -38,16 +38,6 @@ body {
     width: auto;
 }
 
-@media (max-width: 720px) {
-
-    body {
-        background-image: none;
-        background-color: var(--white-color);
-    }
-
-}
-
-
 /******************/
 /* Navigation bar */
 /******************/
@@ -120,7 +110,7 @@ nav {
     width: 100%;
     position: fixed;
     bottom: 0;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+    box-shadow: 0 3px 20px rgb(0 0 0 / 0.4);
 }
 
 /* Dropup content (hiddent by default) */
@@ -452,7 +442,8 @@ a.hyperlink:hover {
 @media (max-width: 720px) {
 
     .deco, .deco:before, .deco:after {
-        border: none;
+        border-left: none;
+        border-right: none;
     }
 
 }
@@ -506,14 +497,10 @@ a.hyperlink:hover {
 }
 
 .page {
-    background-color: transparent;
-/*    border: solid;
-    border-width: 2px;
-    border-color: var(--main-text-color);*/
     text-align: center;
     width: 75%;
     max-width: 900px;
-    margin: 0 auto 100px auto;
+    margin: 0 auto 60px auto;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -534,14 +521,13 @@ a.hyperlink:hover {
         display: none;
     }
     .page {
-        border:none;
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
     .note {
         border:none;
         padding: 0;
-    }
-    .text {
-        padding: 10px 10px 10px 10px;
     }
     .float {
         padding: 10px 10px 10px 10px;
@@ -569,14 +555,6 @@ img {
     width: 80%;
     max-width: 768px;
     top: -20x;
-}
-
-@media (max-width: 720px) {
-
-    .divider {
-        width: 100%;
-    }
-
 }
 
 /***********/
