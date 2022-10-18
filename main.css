@@ -18,7 +18,7 @@
 
 html {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
     color: var(--main-text-color);
     scroll-behavior: smooth;
@@ -189,7 +189,7 @@ nav {
 .names {
     text-align: center;
     font-family: 'Aboreto', serif;
-    font-size: 4em;
+    font-size: 4.5em;
     font-variant: small-caps;
     color: var(--teal-color);
     line-height: 0.9em;
@@ -339,7 +339,7 @@ a.hyperlink:hover {
 #splash-anchor {
     text-align: center;
     font-family: 'Aboreto', serif;
-    font-size: 4.7em;
+    font-size: 5.5em;
     font-variant: small-caps;
     color: var(--teal-color);
     line-height: 0.9em;
