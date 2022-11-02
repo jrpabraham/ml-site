@@ -198,7 +198,7 @@ nav {
 
 h1 {
     font-family: 'Ms Madi';
-    font-size: 4em;
+    font-size: 3.5em;
     font-variant: normal;
     font-weight: normal;
     text-align: center;
@@ -208,6 +208,7 @@ h1 {
 h2 {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
+    font-size: 1.5em;
     color: var(--main-text-color);
 }
 
@@ -456,7 +457,6 @@ a.hyperlink:hover {
 
 .text {
     padding: 0px 15% 20px 15%;
-    font-size: 1.2em;
     text-align: left;
     text-indent: 2em;
 }
