@@ -192,12 +192,13 @@ nav {
     font-variant: normal;
     font-weight: 400;
     letter-spacing: normal;
-    /*display: inline;*/
+    display: inline;
+    vertical-align: middle;
 }
 
 h1 {
     font-family: 'Ms Madi';
-    font-size: 3em;
+    font-size: 4em;
     font-variant: normal;
     font-weight: normal;
     text-align: center;
