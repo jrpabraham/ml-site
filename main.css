@@ -414,6 +414,7 @@ a.hyperlink:hover {
     border-color: var(--gold-color);
     background-color: var(--white-color);
     position: relative;
+    padding: 20px 0px 20px 0px;
 }
 
 .deco:before, .deco:after {
@@ -501,9 +502,8 @@ a.hyperlink:hover {
     text-align: center;
     width: 75%;
     max-width: 900px;
-    margin: 0 auto 60px auto;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    margin: 100px auto 100px auto;
+    padding: 0px auto 0px auto;
 }
 
 .column {
@@ -523,8 +523,6 @@ a.hyperlink:hover {
     }
     .page {
         width: 100%;
-        padding-top: 100px;
-        padding-bottom: 100px;
     }
     .note {
         border:none;
