@@ -67,7 +67,6 @@ nav {
 }
 
 .menu-list-item {
-    display: relative;
     font-size: 1.2em;
     letter-spacing: 2px;
     text-align: center;
@@ -503,7 +502,8 @@ a.hyperlink:hover {
     width: 75%;
     max-width: 900px;
     margin: 100px auto 100px auto;
-    padding: 0px auto 0px auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .column {
@@ -553,7 +553,7 @@ img {
 .divider {
     width: 80%;
     max-width: 768px;
-    top: -20x;
+    top: -20px;
 }
 
 /***********/
