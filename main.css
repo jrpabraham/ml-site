@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Ms+Madi|Oswald|Josefin+Sans:300,400|Aboreto|Marcellus|Bodoni+Moda|Italiana|Antic+Didone|Cormorant+SC|Noto+Serif+Display|Licorice|Meow+Script|Allura|Alex+Brush');
+@import url('https://fonts.googleapis.com/css?family=Ms+Madi|Josefin+Sans:300,400|Aboreto');
+
+/*Oswald|Marcellus|Bodoni+Moda|Italiana|Antic+Didone|Cormorant+SC|Noto+Serif+Display|Licorice|Meow+Script|Allura|Alex+Brush*/
 
 :root {
     --main-text-color: #343434;
@@ -23,15 +25,14 @@ html {
     color: var(--main-text-color);
     scroll-behavior: smooth;
     position: relative;
-    caret-color: transparent;
 }
 
 body {
     margin: 0 0 0 0;
     background-image: url("assets/75800-white.jpg");
-    background-position: center; /* Center the image */
-    background-repeat: repeat; /* Do not repeat the image */
-    background-size: 1024px; /* Resize the background image to cover the entire container */
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
     overflow-x: hidden;
     position: relative;
     height: auto;
@@ -212,20 +213,16 @@ h2 {
 }
 
 p, q {
-    letter-spacing: 0.05em;
     font-size: 1.2em;
+    letter-spacing: 1px;
 }
 
 q:before { 
     content: open-quote;
-    font-weight: 200;
-    font-size: 0.8em;
 } 
 
 q:after { 
     content: close-quote;
-    font-weight: 200;
-    font-size: 0.8em;
 }
 
 a.hyperlink {
@@ -238,70 +235,6 @@ a.hyperlink:hover {
     text-decoration: none;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
-}
-
-.middle {
-    position: relative;
-    color: var(--main-text-color);
-    text-decoration: none;
-}
-
-.middle:hover {
-    color: var(--main-text-color);
-}
-
-.middle:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  bottom: 5px;
-  left: 0;
-  background-color: var(--main-text-color);
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.middle:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-::selection {
-  background-color: var(--teal-color);
-  color: var(--white-color); 
-}
-
-::-moz-selection {
-  background-color: var(--teal-color);
-  color: var(--white-color); 
-}
-
-.digit {
-  font-size: 0.73em;
-}
-
-.date {
-  font-family: 'Aboreto';
-  font-size: 2em;
-  line-height: 0.2em;
-  letter-spacing: 0.05em;
-  margin: 1em 0 1em 0;
-  text-align: center;
-}
-
-.nowrap {
-    white-space: nowrap;
-}
-
-@media (max-width: 918px) {
-    .date {
-        font-size: 8vw;
-    }
 }
 
 /***************/
@@ -330,7 +263,7 @@ a.hyperlink:hover {
 #splash-anchor {
     text-align: center;
     font-family: 'Aboreto', sans-serif;
-    font-size: 5.5em;
+    font-size: 4.7em;
     font-variant: small-caps;
     color: var(--teal-color);
     line-height: 0.9em;
@@ -368,40 +301,6 @@ a.hyperlink:hover {
     }
     #splash-anchor {
         font-size: 10vmin;
-    }
-}
-
-/*
-@media (max-width: 640px), (max-height: 640px) {
-    #splash-name {
-        width: 46vmin;
-        height: 46vmin;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-top: -23vmin;
-        margin-left: -23vmin;        
-    }
-    #splash-anchor {
-        font-size: 12.5vmin;
-    }
-}*/
-
-#footer-image {
-    background-color: transparent;
-    background-image: url("assets/footer-bush.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    width: 100%;
-    height: 512px;
-    margin: -512px 0 0 0;
-    z-index: 1;
-}
-
-@media (min-width: 1950px) {
-    #footer-image {
-        display: none;
     }
 }
 
@@ -464,39 +363,6 @@ a.hyperlink:hover {
     padding: 20px 15% 20px 15%;
 }
 
-
-.note {
-
-    background-color: transparent;
-    border: none;
-    border-width: 2px;
-    border-color: var(--main-text-color);
-    margin: -20px 10% 10% 10%;
-    text-align: center;
-
-}
-
-.note p {
-
-    text-align: left;
-    line-height: 1.5em;
-    font-family: 'EB Garamond', 'Georgia', serif;
-    font-variant: normal;
-    z-index: 1;
-
-}
-
-.note li {
-
-    text-align: left;
-    margin: 1.5em 0 1.5em 0;
-    line-height: 1.5em;
-    font-size: 0.8em;
-    font-family: 'EB Garamond', 'Georgia', serif;
-    font-variant: normal;
-
-}
-
 .page {
     text-align: center;
     width: 75%;
@@ -518,15 +384,8 @@ a.hyperlink:hover {
 }
 
 @media (max-width: 720px) {
-    .accent {
-        display: none;
-    }
     .page {
         width: 100%;
-    }
-    .note {
-        border:none;
-        padding: 0;
     }
     .float {
         padding: 10px 10px 10px 10px;
@@ -555,41 +414,6 @@ img {
     max-width: 768px;
     top: -20px;
 }
-
-/***********/
-/* Buttons */
-/***********/
-
-/*button {
-    color: var(--main-text-color);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 200;
-    font-size: 1em;
-    font-variant: small-caps;
-    text-align: center;
-    background-color: transparent;
-    border: 1px solid var(--main-text-color);
-    height: 2em;
-    width: 4em;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 10px 0 10px 0;
-}*/
-
-/*.long {
-    height: 2em;
-    width: 5em;
-}
-
-button:hover {
-    color: var(--main-bg-color);
-    background-color: var(--main-text-color);
-}
-
-button:active {
-    color: var(--main-text-color);
-    background-color: transparent;
-}*/
 
 /****************/
 /* Embedded map */
@@ -723,6 +547,7 @@ a.lightbox:target {
 }
 
 /* Create four equal columns that sits next to each other */
+
 .photo-column {
   flex: 50%;
   max-width: 50%;
@@ -737,6 +562,7 @@ a.lightbox:target {
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 720px) {
   .photo-column {
     flex: 100%;
