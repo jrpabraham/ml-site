@@ -233,6 +233,16 @@ a.hyperlink:hover {
     transition-duration: 0.4s;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: var(--white-color);
+  background: var(--teal-color);
+}
+
+::selection {
+  color: var(--white-color);
+  background: var(--teal-color);
+}
+
 /***************/
 /* Splash page */
 /***************/
@@ -306,29 +316,28 @@ a.hyperlink:hover {
 .deco {
     border: 4px solid;
     border-color: var(--gold-color);
-    background-color: var(--white-color);
     position: relative;
-    padding: 20px 0px 20px 0px;
 }
 
 .deco:before, .deco:after {
     border: 2px solid;
     border-color: var(--gold-color);
     content: "";
-    position: absolute;  
+    position: absolute;
+    z-index: -1;  
 }
 
 .deco:before {
     top: -10px;
-    right: 5px;
+    right: 4px;
     bottom: -10px;
-    left: 5px;
+    left: 4px;
 }
 
 .deco:after {
-    top: 5px;
+    top: 4px;
     right: -10px;
-    bottom: 5px;
+    bottom: 4px;
     left: -10px;
 }
 
@@ -360,8 +369,13 @@ a.hyperlink:hover {
     width: 75%;
     max-width: 900px;
     margin: 100px auto 100px auto;
-    padding-top: 0px;
-    padding-bottom: 0px;
+}
+
+.content {
+    margin: 6px;
+    background-color: var(--white-color);
+    overflow: hidden;
+    padding: 20px;
 }
 
 .column {
@@ -378,6 +392,9 @@ a.hyperlink:hover {
 @media (max-width: 720px) {
     .page {
         width: 100%;
+    }
+    .content {
+        margin: 6px 0px 6px 0px;
     }
     .float {
         padding: 10px 10px 10px 10px;
