@@ -24,7 +24,6 @@ html {
     font-weight: 300;
     color: var(--main-text-color);
     scroll-behavior: smooth;
-    position: relative;
 }
 
 body {
@@ -34,7 +33,6 @@ body {
     background-repeat: repeat;
     background-size: contain;
     overflow-x: hidden;
-    position: relative;
     height: auto;
     width: auto;
 }
@@ -50,7 +48,6 @@ nav {
     bottom: 0;
     width: 100%;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
-    z-index: 99;
 }
 
 .menu-list {
@@ -123,7 +120,6 @@ nav {
   width: 100%;
   min-width: 160px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
-  z-index: 1;
 }
 
 /* Links inside the dropup */
@@ -269,7 +265,6 @@ a.hyperlink:hover {
     line-height: 0.9em;
     letter-spacing: 0.1em;
     position: absolute;
-    z-index: 99;
 }
 
 #splash-anchor .et {
@@ -319,9 +314,6 @@ a.hyperlink:hover {
 .deco:before, .deco:after {
     border: 2px solid;
     border-color: var(--gold-color);
-}
-
-.deco:before, .deco:after {
     content: "";
     position: absolute;  
 }
@@ -483,13 +475,11 @@ a.thumbnail, a.thumbnail:hover {
 img.thumbnail {
   width: 100%;
   transition: transform 2s, filter 4s ease-in-out;
-  z-index: 0;
 }
 
 img.thumbnail:hover {
   /*transform: scale(1.1);*/
   filter: brightness(0.8);
-  z-index: 0;
 }
 
 a.lightbox, a.lightbox:hover {
@@ -500,7 +490,6 @@ a.lightbox, a.lightbox:hover {
   transition: opacity 200ms, visibility 200ms;
   /** Position and style */
   position: fixed;
-  z-index: 999;
   width: 100%;
   height: 100%;
   text-align: center;
