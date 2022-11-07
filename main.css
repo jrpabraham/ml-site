@@ -418,6 +418,12 @@ img {
     margin-right: auto;
 }
 
+img.framed {
+    margin: 0px 20px 20px 0px;
+    float: left;
+    box-shadow: -50px -50px 0 -40px var(--gold-color), 50px 50px 0 -40px var(--gold-color);
+}
+
 .divider {
     width: 80%;
     max-width: 768px;
