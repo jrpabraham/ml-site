@@ -142,14 +142,14 @@ nav {
 
 /* Show the dropup menu on hover */
 
-.dropup:hover .dropup-content {
+.dropup:active .dropup-content {
   display: block;
   background-color: var(--white-color);
 }
 
 /* Change the background color of the dropup button when the dropup content is shown */
 
-.dropup:hover .dropbtn {
+.dropup:active .dropbtn {
   background-color: var(--teal-color);
   color: var(--white-color);
 } 
