@@ -113,13 +113,16 @@ nav {
 /* Dropup content (hiddent by default) */
 
 .dropup-content {
-  display: none;
-  position: absolute;
-  bottom: 50px;
-  background-color: #f1f1f1;
-  width: 100%;
-  min-width: 160px;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+    position: absolute;
+    bottom: 50px;
+    background-color: #f1f1f1;
+    width: 100%;
+    min-width: 160px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
 }
 
 /* Links inside the dropup */
@@ -142,14 +145,16 @@ nav {
 
 /* Show the dropup menu on hover */
 
-.dropup:hover .dropup-content, .dropup:active .dropup-content {
+.dropup:hover .dropup-content{
   display: block;
   background-color: var(--white-color);
+      opacity: 1;
+    height: auto;
 }
 
 /* Change the background color of the dropup button when the dropup content is shown */
 
-.dropup:hover .dropbtn, .dropup:active .dropbtn {
+.dropup:hover .dropbtn{
   background-color: var(--teal-color);
   color: var(--white-color);
 } 
