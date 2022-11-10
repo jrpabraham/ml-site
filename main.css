@@ -3,7 +3,7 @@
 /*Oswald|Marcellus|Bodoni+Moda|Italiana|Antic+Didone|Cormorant+SC|Noto+Serif+Display|Licorice|Meow+Script|Allura|Alex+Brush*/
 
 :root {
-    --main-text-color: #343434;
+    --main-text-color: #444;
     --peach-color: #ffd5cb;
     --forest-color: #203123;
     --leaf-color: #56612f;
@@ -95,7 +95,7 @@ nav {
     height: 50px;
     text-align: center;
     font-family: 'Josefin Sans', serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 2em;
     letter-spacing: 2px;
     color: var(--main-text-color);
