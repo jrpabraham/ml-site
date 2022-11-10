@@ -7,7 +7,7 @@
     --peach-color: #ffd5cb;
     --forest-color: #203123;
     --leaf-color: #56612f;
-    --white-color: #f2f2f2;
+    --white-color: #fafafa;
     --gold-color: #d7c791;
     --teal-color: #8f9f91;
     --skin-color: #f6e6e1;
@@ -401,6 +401,9 @@ a.hyperlink:hover {
     .content {
         margin: 6px 0px 6px 0px;
     }
+    .text {
+        padding: 10px;
+    }
     .float {
         padding: 10px 10px 10px 10px;
     }
@@ -424,7 +427,7 @@ img {
 }
 
 img.framed {
-    margin: 0px 20px 20px 0px;
+    margin: 0px 30px 30px 0px;
     float: left;
     box-shadow: -50px -50px 0 -40px var(--gold-color), 50px 50px 0 -40px var(--gold-color);
 }
