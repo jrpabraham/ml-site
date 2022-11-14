@@ -231,11 +231,16 @@ a.hyperlink {
     text-decoration: none;
 }
 
-a.hyperlink:hover {
+a.external {
+    color: var(--main-text-color);
+    text-decoration-style: dashed;
+}
+
+a.hyperlink:hover, a.external:hover {
     color: var(--teal-color);
     text-decoration: none;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
 }
 
 ::-moz-selection { /* Code for Firefox */
