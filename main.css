@@ -37,6 +37,28 @@ body {
     width: auto;
 }
 
+/************************/
+/* Page load animations */
+/************************/ 
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 /******************/
 /* Navigation bar */
 /******************/
@@ -233,6 +255,7 @@ a.hyperlink {
 a.external {
     color: var(--main-text-color);
     text-decoration-style: dashed;
+    text-underline-offset: 4px;
 }
 
 a.hyperlink:hover, a.external:hover {
@@ -284,6 +307,7 @@ a.hyperlink:hover, a.external:hover {
     line-height: 0.9em;
     letter-spacing: 0.1em;
     position: absolute;
+    animation: fadeIn 2s;
 }
 
 #splash-anchor .et {
@@ -292,6 +316,7 @@ a.hyperlink:hover, a.external:hover {
     font-variant: normal;
     font-weight: 400;
     letter-spacing: normal;
+    display: block;
 }
 
 #splash-decor {
