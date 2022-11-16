@@ -307,7 +307,14 @@ a.hyperlink:hover, a.external:hover {
     line-height: 0.9em;
     letter-spacing: 0.1em;
     position: absolute;
-    animation: fadeIn 2s;
+}
+
+#splash-lea {
+    animation: fadeIn 1s;
+}
+
+#splash-mark {
+    animation: fadeIn 2.5s;
 }
 
 #splash-anchor .et {
@@ -317,6 +324,7 @@ a.hyperlink:hover, a.external:hover {
     font-weight: 400;
     letter-spacing: normal;
     display: block;
+    animation: fadeIn 2s;
 }
 
 #splash-decor {
