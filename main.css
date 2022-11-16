@@ -310,11 +310,11 @@ a.hyperlink:hover, a.external:hover {
 }
 
 #splash-lea {
-    animation: fadeIn 1s;
+    animation: fadeIn 2s;
 }
 
 #splash-mark {
-    animation: fadeIn 2.5s;
+    animation: fadeIn 4s;
 }
 
 #splash-anchor .et {
@@ -324,7 +324,7 @@ a.hyperlink:hover, a.external:hover {
     font-weight: 400;
     letter-spacing: normal;
     display: block;
-    animation: fadeIn 2s;
+    animation: fadeIn 3s;
 }
 
 #splash-decor {
@@ -396,16 +396,6 @@ a.hyperlink:hover, a.external:hover {
 /* Sections */
 /************/
 
-.text {
-    padding: 0px 15% 20px 15%;
-    text-align: left;
-    text-indent: 2em;
-}
-
-.float {
-    padding: 20px 15% 20px 15%;
-}
-
 .page {
     text-align: center;
     width: 75%;
@@ -418,6 +408,16 @@ a.hyperlink:hover, a.external:hover {
     background-color: var(--white-color);
     overflow: hidden;
     padding: 20px;
+}
+
+.text {
+    padding: 0px 15% 20px 15%;
+    text-align: left;
+    text-indent: 2em;
+}
+
+.float {
+    padding: 0px 15% 20px 15%;
 }
 
 .column {
@@ -442,7 +442,7 @@ a.hyperlink:hover, a.external:hover {
         padding: 10px;
     }
     .float {
-        padding: 10px 10px 10px 10px;
+        padding: 10px;
     }
 }
 
