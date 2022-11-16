@@ -220,7 +220,7 @@ nav {
 
 h1 {
     font-family: 'Ms Madi', cursive;
-    font-size: 3.5em;
+    font-size: 3em;
     font-variant: normal;
     font-weight: normal;
     text-align: center;
@@ -230,8 +230,9 @@ h1 {
 h2 {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: var(--main-text-color);
+    letter-spacing: 1px;
 }
 
 p, q {
