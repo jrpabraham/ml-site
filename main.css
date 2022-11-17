@@ -434,9 +434,10 @@ a.hyperlink:hover, a.external:hover {
 
 #google-form {
     border: none;
-    aspect-ratio: 1;
     height: 100%;
     width: 100%;
+    margin-top: 40px;
+    min-height: 900px;
 }
 
 @media (max-width: 720px) {
