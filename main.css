@@ -432,6 +432,13 @@ a.hyperlink:hover, a.external:hover {
   clear: both;
 }
 
+#google-form {
+    border: none;
+    aspect-ratio: 1;
+    height: 100%;
+    width: 100%;
+}
+
 @media (max-width: 720px) {
     .page {
         width: 100%;
