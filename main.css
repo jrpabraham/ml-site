@@ -437,7 +437,7 @@ a.hyperlink:hover, a.external:hover {
     height: 100%;
     width: 100%;
     margin-top: 40px;
-    min-height: 900px;
+    min-height: 150vh;
 }
 
 @media (max-width: 720px) {
