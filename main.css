@@ -235,6 +235,14 @@ h2 {
     letter-spacing: 1px;
 }
 
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: var(--main-text-color);
+    letter-spacing: 1px;
+}
+
 p, q {
     font-size: 1.2em;
     letter-spacing: 1px;
@@ -418,7 +426,7 @@ a.hyperlink:hover, a.external:hover {
 }
 
 .float {
-    padding: 0px 15% 20px 15%;
+    padding: 0px 10% 20px 10%;
 }
 
 .column {
@@ -433,10 +441,12 @@ a.hyperlink:hover, a.external:hover {
 }
 
 .icontainer {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
 }
 
 #google-form {
@@ -568,12 +578,11 @@ a.thumbnail, a.thumbnail:hover {
 
 img.thumbnail {
   width: 100%;
-  transition: transform 2s, filter 4s ease-in-out;
+  transition: transform 2s, filter 0.1s ease-in-out;
 }
 
 img.thumbnail:hover {
-  /*transform: scale(1.1);*/
-  filter: brightness(0.8);
+  filter: opacity(70%);
 }
 
 a.lightbox, a.lightbox:hover {
@@ -590,6 +599,7 @@ a.lightbox, a.lightbox:hover {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.8);
+  z-index: 99;
 }
 
 a.lightbox img {
@@ -602,6 +612,7 @@ a.lightbox img {
   left: 0;
   right: 0;
   margin: auto;
+  z-index: 99;
 }
 
 a.lightbox:target {
