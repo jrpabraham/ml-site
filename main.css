@@ -37,12 +37,6 @@ body {
     width: auto;
 }
 
-@media (max-width: 720px) {
-    body {
-        background-image: none;
-    }
-}
-
 /************************/
 /* Page load animations */
 /************************/ 
