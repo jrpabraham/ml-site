@@ -254,6 +254,10 @@ p, q {
     letter-spacing: 1px;
 }
 
+.text p {
+    text-indent: 2em;
+}
+
 q:before { 
     content: open-quote;
 } 
@@ -428,7 +432,6 @@ a.hyperlink:hover, a.external:hover {
 .text {
     padding: 0px 15% 20px 15%;
     text-align: left;
-    text-indent: 2em;
 }
 
 .float {
