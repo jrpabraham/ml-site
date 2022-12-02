@@ -437,7 +437,7 @@ a.hyperlink:hover, a.external:hover {
 }
 
 .text {
-    padding: 0px 15% 20px 15%;
+    padding: 0px 10% 20px 10%;
     text-align: left;
 }
 
@@ -519,7 +519,7 @@ img {
 img.framed {
     margin: 0px 30px 20px 0px;
     float: left;
-    box-shadow: -50px -50px 0 -40px var(--gold-color), 50px 50px 0 -40px var(--gold-color);
+    box-shadow: -50px -50px 0 -40px var(--gold-color), 50px 50px 0 -40px var(--gold-color), 0 3px 10px rgb(0 0 0 / 0.4);
     width: 100%;
     height: auto;
 }
