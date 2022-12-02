@@ -83,7 +83,7 @@ nav {
     padding: 0;
     width: 75%;
     max-width: 900px;
-    min-width: 724px;
+    min-width: 800px;
 }
 
 .menu-list-item {
@@ -240,12 +240,25 @@ h3 {
     font-weight: 400;
     font-size: 1.2em;
     color: var(--main-text-color);
-    letter-spacing: 1px;
+}
+
+.party-name {
+    font-family: 'Aboreto', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: var(--main-text-color);
+    text-align: left;
+}
+
+.party-role {
+    font-family: 'Ms Madi', cursive;
+    font-size: 1.6em;
+    color: var(--main-text-color);
+    text-align: left;
 }
 
 p, q {
     font-size: 1.2em;
-    letter-spacing: 1px;
 }
 
 .text p {
@@ -434,7 +447,9 @@ a.hyperlink:hover, a.external:hover {
 
 .column {
   float: left;
+  text-align: left;
   width: 50%;
+  padding: 10px;
 }
 
 .row:after {
@@ -485,10 +500,9 @@ a.hyperlink:hover, a.external:hover {
     }
 }
 
-@media (max-width: 512px) {
+@media (max-width: 720px) {
     .column {
-        float: none;
-        width: auto;
+        width: 100%;
     }
 }
 
@@ -503,9 +517,11 @@ img {
 }
 
 img.framed {
-    margin: 0px 30px 30px 0px;
+    margin: 0px 30px 20px 0px;
     float: left;
     box-shadow: -50px -50px 0 -40px var(--gold-color), 50px 50px 0 -40px var(--gold-color);
+    width: 100%;
+    height: auto;
 }
 
 .divider {
@@ -566,6 +582,39 @@ img.framed {
     .map-responsive img {
         visibility: visible;
     }
+}
+
+/*////////////////////*/
+/* Wedding party grid */
+/*////////////////////*/
+
+
+.party-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+
+.party-column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.party-column .responsive {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 720px) {
+  .party-column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 /*/////////*/
