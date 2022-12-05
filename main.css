@@ -517,7 +517,7 @@ img {
 }
 
 img.framed {
-    margin: 0px 30px 20px 0px;
+    margin: 0px 30px 30px 0px;
     float: left;
     box-shadow: -50px -50px 0 -40px var(--gold-color), 50px 50px 0 -40px var(--gold-color), 0 3px 10px rgb(0 0 0 / 0.4);
     width: 100%;
@@ -528,6 +528,16 @@ img.framed {
     width: 80%;
     max-width: 768px;
     top: -20px;
+}
+
+@media (max-width: 720px) {
+    img.framed {
+        width: 75%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
 }
 
 /****************/
@@ -582,39 +592,6 @@ img.framed {
     .map-responsive img {
         visibility: visible;
     }
-}
-
-/*////////////////////*/
-/* Wedding party grid */
-/*////////////////////*/
-
-
-.party-row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-
-.party-column {
-  flex: 50%;
-  max-width: 50%;
-  padding: 0 4px;
-}
-
-.party-column .responsive {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 720px) {
-  .party-column {
-    flex: 100%;
-    max-width: 100%;
-  }
 }
 
 /*/////////*/
@@ -715,3 +692,4 @@ a.lightbox:target {
     max-width: 100%;
   }
 }
+
