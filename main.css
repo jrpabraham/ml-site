@@ -255,6 +255,7 @@ h3 {
     font-size: 1.6em;
     color: var(--main-text-color);
     text-align: left;
+    white-space: nowrap;
 }
 
 p, q {
@@ -448,8 +449,15 @@ a.hyperlink:hover, a.external:hover {
 .column {
   float: left;
   text-align: left;
-  width: 50%;
   padding: 10px;
+}
+
+.left {
+  width: 38%;
+}
+
+.right {
+  width: 62%;
 }
 
 .row:after {
