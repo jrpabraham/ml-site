@@ -446,26 +446,6 @@ a.hyperlink:hover, a.external:hover {
     padding: 0px 10% 20px 10%;
 }
 
-.column {
-  float: left;
-  text-align: left;
-  padding: 10px;
-}
-
-.left {
-  width: 38.2%;
-}
-
-.right {
-  width: 61.8%;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .icontainer {
     position: relative;
     overflow: hidden;
@@ -509,8 +489,42 @@ a.hyperlink:hover, a.external:hover {
     }
 }
 
+/******************/
+/* Party profiles */
+/******************/
+
+.profiles {
+    display: flex;
+    padding: 0px 10% 20px 10%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    row-gap: 20px;
+}
+
+.groomsmen {
+    flex-flow: row-reverse wrap;
+}
+
+.side-a {
+    width: 38.2%;
+    padding: 10px;
+
+}
+
+.side-b {
+    width: 61.8%;
+    padding: 0px 0px 0px 20px;
+    text-align: left;
+
+}
+
+.side-b .groomsmen {
+    padding: 0px 20px 0px 0px;
+}
+
 @media (max-width: 720px) {
-    .column {
+    .side-a, .side-b {
         width: 100%;
     }
 }
@@ -532,6 +546,12 @@ img.framed {
     width: 100%;
     height: auto;
 }
+
+img.story {
+    display: inline;
+    width: 50%;
+}
+
 
 .divider {
     width: 80%;
