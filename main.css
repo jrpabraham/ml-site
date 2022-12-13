@@ -561,11 +561,14 @@ img.story {
 
 @media (max-width: 720px) {
     img.framed {
-        width: 65%;
+        width: 80%;
         display: block;
         margin-left: auto;
         margin-right: auto;
         float: none;
+    }
+    .story {
+        width: 100%;
     }
 }
 
